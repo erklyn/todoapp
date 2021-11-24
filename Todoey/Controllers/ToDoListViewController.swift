@@ -43,11 +43,7 @@ class ToDoListViewController: UITableViewController {
         cell.textLabel?.text = todoItem.title
         
        
-        if todoItem.isChecked == true{
-            cell.accessoryType = .checkmark
-        } else {
-            cell.accessoryType = .none
-        }
+        cell.accessoryType = todoItem.isChecked ? .checkmark : .none
         
         return cell
         
