@@ -17,7 +17,7 @@ class ToDoListViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-        //MARK: - TableViewData Source
+        //MARK: - TableView DataSource Methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemArray.count
@@ -29,6 +29,22 @@ class ToDoListViewController: UITableViewController {
         return cell
         
     }
+    //MARK: - TableView Delegate Methods
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // print(itemArray[indexPath.row])
+        let cellSettings = tableView.cellForRow(at: indexPath)
+        
+        
+        if cellSettings?.accessoryType == .checkmark {
+            cellSettings?.accessoryType = .none
+        }else{
+            cellSettings?.accessoryType =  .checkmark
+        }
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
         
     
 }
