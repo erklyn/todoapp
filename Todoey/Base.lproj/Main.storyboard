@@ -31,11 +31,11 @@
                             <outlet property="delegate" destination="s5u-IA-lN5" id="56x-XG-RSX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="XMk-Ia-hGv">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2jf-vg-jxq">
+                    <navigationItem key="navigationItem" title="Todoey" id="sK4-Mb-uVz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cs7-Py-P3q">
                             <color key="tintColor" systemColor="labelColor"/>
                             <connections>
-                                <action selector="addButtonPressed:" destination="s5u-IA-lN5" id="AYk-B2-vUa"/>
+                                <action selector="addButtonPressed:" destination="s5u-IA-lN5" id="PQ6-wY-ADz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
